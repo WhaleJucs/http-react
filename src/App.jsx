@@ -10,7 +10,7 @@ function App() {
 
   // 1 - resgatando dados
   useEffect(() => {
-    async function fetchData() {
+      const fetchData = async() => {
       const res = await fetch(url)
       const data = await res.json()
 
@@ -36,6 +36,13 @@ function App() {
       },
       body: JSON.stringify(product),
     })
+
+    // 3 - carregamento dinâmico
+    const addedProduct = await res.json()
+
+    setProduct((prevProduct) => [...prevProduct, addedProduct])
+    setName('')
+    setPrice('')
   }
 
   return (
