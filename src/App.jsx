@@ -12,7 +12,7 @@ function App() {
   const [price, setPrice] = useState('')
 
   // 4 - custom hook
-  const { data: items, httpConfig, loading } = useFetch(url)
+  const { data: items, httpConfig, loading, error } = useFetch(url)
 
   // 1 - resgatando dados
   // useEffect(() => {
@@ -59,6 +59,7 @@ function App() {
       <h1>Lista de Produtos</h1>
       {/* 6 - carregamento */}
       {loading && <p>Carregando dados...</p>}
+      {error && <p>{error}</p>}
       {!loading && (
         <ul>
           {items && items.map((product) => (
