@@ -16,11 +16,6 @@
       "price": 29.9
     },
     {
-      "id": "cd97",
-      "name": "Tênis ",
-      "price": "120"
-    },
-    {
       "id": "5fe2",
       "name": "Oculos",
       "price": "70.4"
@@ -31,24 +26,9 @@
       "price": "110"
     },
     {
-      "id": "5d1a",
-      "name": "celular",
-      "price": "110"
-    },
-    {
       "id": "d7c6",
       "name": "mouse",
       "price": "35"
-    },
-    {
-      "id": "6485",
-      "name": "Monitor",
-      "price": "500"
-    },
-    {
-      "id": "d4a3",
-      "name": "mousepad",
-      "price": "20"
     }
   ]
 }
